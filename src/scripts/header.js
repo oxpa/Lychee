@@ -74,6 +74,7 @@ header.show = function() {
 }
 
 header.hide = function(e) {
+	return false
 
 	if (visible.photo() && !visible.sidebar() && !visible.contextMenu() && basicModal.visible()===false) {
 

@@ -24,7 +24,11 @@ lychee = {
 	dropboxKey      : '',
 
 	content         : $('.content'),
-	imageview       : $('#imageview')
+	imageview       : $('#imageview'),
+
+    metaTitle       : document.getElementsByName('title')[0],
+    metaDescription : document.getElementsByName('description')[0],
+    metaImage       : document.getElementsByName('image')[0]
 
 }
 
@@ -228,9 +232,17 @@ lychee.getUpdate = function() {
 
 }
 
-lychee.setTitle = function(title, editable) {
+lychee.setTitle = function(title, editable, description, image) {
 
 	document.title = lychee.title + ' - ' + title
+    lychee.metaTitle.setAttribute('content', 'Lychee - ' + title)
+
+    if (typeof(description) !== 'undefined') {
+        lychee.metaDescription.setAttribute('content', description)
+    }
+    if (typeof(image) !== 'undefined') {
+        lychee.metaDescription.setAttribute('content', 'image')
+    }
 
 	header.setEditable(editable)
 	header.setTitle(title)

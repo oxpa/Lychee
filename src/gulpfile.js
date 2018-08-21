@@ -55,7 +55,7 @@ gulp.task('view--scripts', ['view--js'], function() {
 
 	return gulp.src(paths.view.scripts)
 	           .pipe(plugins.concat('view.js', {newLine: "\n"}))
-	           .pipe(plugins.uglify())
+	           //.pipe(plugins.uglify())
 	           .on('error', catchError)
 	           .pipe(gulp.dest('../dist/'))
 
@@ -122,7 +122,7 @@ gulp.task('main--scripts', ['main--js'], function() {
 
 	return gulp.src(paths.main.scripts)
 	           .pipe(plugins.concat('main.js', {newLine: "\n"}))
-	           .pipe(plugins.uglify())
+	           //.pipe(plugins.uglify())
 	           .on('error', catchError)
 	           .pipe(gulp.dest('../dist/'))
 

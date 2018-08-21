@@ -22,9 +22,9 @@ define('LYCHEE_PLUGINS', LYCHEE . 'plugins/');
 define('LYCHEE_CONFIG_FILE', LYCHEE_DATA . 'config.php');
 
 // Define urls
-define('LYCHEE_URL_UPLOADS_BIG', 'uploads/big/');
-define('LYCHEE_URL_UPLOADS_MEDIUM', 'uploads/medium/');
-define('LYCHEE_URL_UPLOADS_THUMB', 'uploads/thumb/');
+define('LYCHEE_URL_UPLOADS_BIG', '//static.photos.catfeed.net/uploads/big/');
+define('LYCHEE_URL_UPLOADS_MEDIUM', '//static.photos.catfeed.net/uploads/medium/');
+define('LYCHEE_URL_UPLOADS_THUMB', '//static.photos.catfeed.net/uploads/thumb/');
 
 function defineTablePrefix($dbTablePrefix) {
 

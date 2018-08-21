@@ -55,7 +55,7 @@ album.getID = function() {
 
 	if (isID(id)===true) return id
 
-	return false
+	return 0
 
 }
 

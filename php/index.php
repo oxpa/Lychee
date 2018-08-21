@@ -38,6 +38,7 @@ else                               $fn = null;
 if (!empty($fn)) {
 
 	// Start the session and set the default timezone
+	//session_start(['read_and_close' => true]);
 	session_start();
 	date_default_timezone_set('UTC');
 
